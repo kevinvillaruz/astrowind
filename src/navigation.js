@@ -75,7 +75,7 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Services',
       links: [
         { text: 'Features', href: '#' },
         { text: 'Security', href: '#' },
@@ -87,10 +87,10 @@ export const footerData = {
       ],
     },
     {
-      title: 'Platform',
+      title: 'Resources',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
+        { text: 'Case Studies', href: '#' },
+        { text: 'Themes & Templates', href: '#' },
         { text: 'Atom', href: '#' },
         { text: 'Electron', href: '#' },
         { text: 'AstroWind Desktop', href: '#' },
