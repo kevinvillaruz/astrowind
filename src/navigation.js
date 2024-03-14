@@ -3,119 +3,73 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
-      links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
-      ],
+      text: 'Home',
+      href: '/',
     },
     {
-      text: 'Pages',
+      text: 'Solutions',
       links: [
         {
-          text: 'Features (Anchor Link)',
+          text: 'Web Development',
           href: getPermalink('/#features'),
         },
         {
-          text: 'Services',
+          text: 'Mobile Apps',
           href: getPermalink('/services'),
         },
         {
-          text: 'Pricing',
+          text: 'Web Applications',
           href: getPermalink('/pricing'),
         },
         {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
+          text: 'e-Commerce',
           href: getPermalink('/contact'),
         },
         {
-          text: 'Terms',
+          text: 'Hosting',
+          href: getPermalink('/about'),
+        },
+        {
+          text: 'Payment Gateways',
           href: getPermalink('/terms'),
         },
         {
-          text: 'Privacy policy',
+          text: 'SEO',
+          href: getPermalink('/privacy'),
+        },
+        {
+          text: 'Themes & Templates',
           href: getPermalink('/privacy'),
         },
       ],
     },
     {
-      text: 'Landing',
+      text: 'Projects',
       links: [
         {
-          text: 'Lead Generation',
+          text: 'Websites',
           href: getPermalink('/landing/lead-generation'),
         },
         {
-          text: 'Long-form Sales',
+          text: 'Web & Mobile Apps',
           href: getPermalink('/landing/sales'),
         },
         {
-          text: 'Click-Through',
+          text: 'Case Studies',
           href: getPermalink('/landing/click-through'),
         },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
       ],
+    },
+    {
+      text: 'About',
+      href: '/about',
     },
     {
       text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
-    },
-    {
-      text: 'Widgets',
-      href: '#',
+      href: '/blog',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Contact', href: '/contact' }],
 };
 
 export const footerData = {
@@ -170,14 +124,14 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/brandify.ae/' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/brandify.ae' },
+    { ariaLabel: 'Linkedin', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/brandifymedia' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://twitter.com/brandify_ae' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/brandifymedia' },
   ],
   footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm"></span>
+    © 2024 Brandify Media
   `,
 };
