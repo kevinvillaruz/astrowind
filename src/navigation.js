@@ -77,13 +77,12 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Web Development', href: '#' },
+        { text: 'Mobile Apps', href: '#' },
+        { text: 'Web Applications', href: '#' },
+        { text: 'e-Commerce', href: '#' },
+        { text: 'Hosting', href: '#' },
+        { text: 'Payment Gateways', href: '#' },
       ],
     },
     {
@@ -91,26 +90,21 @@ export const footerData = {
       links: [
         { text: 'Case Studies', href: '#' },
         { text: 'Themes & Templates', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Projects', href: '#' },
+        { text: 'Blog', href: '/blog' },
       ],
     },
     {
       title: 'Support',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Submit a ticket', href: '#' },
+        { text: 'Contact us', href: '#' },
       ],
     },
     {
       title: 'Company',
       links: [
         { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
         { text: 'Careers', href: '#' },
         { text: 'Press', href: '#' },
         { text: 'Inclusion', href: '#' },
