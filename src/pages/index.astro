@@ -5,13 +5,12 @@ import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Brands from '~/components/widgets/Brands.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
 
 const metadata = {
   title: 'Brandify Media - Best Web Development Company in Abu Dhabi',
@@ -138,47 +137,47 @@ const metadata = {
     icons={[]}
     images={[
       {
-        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/astrojs.svg',
+        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/astrojs.svg',
         alt: 'AstroJS',
       },
       {
-        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/payload-cms.svg',
+        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/payload-cms.svg',
         alt: 'PayloadCMS',
       },
       {
-        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/node.svg',
+        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/node.svg',
         alt: 'NodeJS',
       },
       {
-        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/shopify.svg',
+        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/shopify.svg',
         alt: 'Shopify',
       },
       {
-        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/Webflow.svg',
+        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/Webflow.svg',
         alt: 'Webflow',
       },
       {
-        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/react.svg',
+        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/react.svg',
         alt: 'React',
       },
       {
-        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/ionic-framework.svg',
+        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/ionic-framework.svg',
         alt: 'Ionic Framework',
       },
       {
-        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/wordpress.svg',
+        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/wordpress.svg',
         alt: 'WordPress',
       },
       {
-        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/mongodb.svg',
+        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/mongodb.svg',
         alt: 'MongoDB',
       },
       {
-        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/amazon-web-services.svg',
+        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/amazon-web-services.svg',
         alt: 'Amazon Web Services',
       },
       {
-        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/DigitalOcean.svg',
+        src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/DigitalOcean.svg',
         alt: 'DigitalOcean',
       },
     ]}
@@ -191,7 +190,7 @@ const metadata = {
     id="features"
     tagline="Partner with Confidence, Thrive with Expertise"
     title="What you'll get working with Brandify"
-    subtitle="Explore the compelling reasons why businesses trust Brandify Media for your digital needs."
+    subtitle="Explore the compelling reasons why businesses trust Brandify Media for their development needs."
     items={[
       {
         title: 'Personalized Approach',
@@ -232,161 +231,54 @@ const metadata = {
     ]}
   />
 
-  <!-- Content Widget **************** -->
+ <!-- Testimonials Widget *********** -->
 
-  <Content
-    isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
-    items={[
-      {
-        title: 'Built on top of Astro 4.0',
-        description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
-      },
-      {
-        title: 'Styled using Tailwind CSS',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
-      },
-      {
-        title: 'Cross-browser compatibility',
-        description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/hero-brandify.svg',
-      alt: 'Colorful Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-       Gain a competitive advantage by incorporating industry leading practices
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-gray-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-gray-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-gray-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    title="Get your dream website up and running in no time with AstroWind."
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
-  />
+ <Testimonials
+ title="What our clients say?"
+ testimonials={[
+   {
+     testimonial: `It's made exploring and downloading website templates a breeze. The interface is intuitive, and I had no trouble finding the perfect template for my project. It's an app that truly empowers users.`,
+     name: 'Cary Kennedy',
+     job: 'Film director',
+     image: {
+       src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+       alt: 'Cary Kennedy Image',
+     },
+   },
+   {
+     testimonial: `The app's seamless download process and intuitive layout have made selecting templates an enjoyable experience. Being able to preview and experiment with different designs before committing has saved me time and ensured I get the perfect look for my website.`,
+     name: 'Josh Wilkinson',
+     job: 'Product Manager',
+     image: {
+       src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+       alt: 'Josh Wilkinson Image',
+     },
+   },
+   {
+     testimonial:
+       'I was able to download and use a professional website template within minutes. The step-by-step process and user-friendly interface made it easy for me to create a website that looks as if it was designed by a pro.',
+     name: 'Sidney Hansen',
+     job: 'Decorator',
+     image: {
+       src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+       alt: 'Sidney Hansen Image',
+     },
+   },
+ ]}
+ callToAction={{
+   target: '_blank',
+   text: 'Share your experience',
+   href: 'https://g.page/r/Cff6ZshVT8OXEBM/review',
+   icon: 'tabler:chevron-right',
+ }}
+/>
 
 
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
     title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
+    information={`Dive into our blog to discover expert advice on web development, app design, e-commerce strategies, SEO best practices, and more. Whether you're a seasoned entrepreneur or just starting your digital journey, our informative articles and engaging content are tailored to help you stay ahead of the curve and succeed in the ever-evolving landscape of digital marketing. 
                 `}
   />
 
@@ -394,51 +286,40 @@ const metadata = {
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Discover answers to commonly asked questions about Brandify Media's services, processes, and expertise."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'What services does Brandify Media offer??',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "Brandify Media offers a comprehensive range of digital solutions including web development, app development, e-commerce solutions, SEO services, hosting, payment gateway integration, and themes/templates.",
       },
       {
-        title: 'What do I need to start?',
+        title: 'How long does it take to develop a website or app?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'The timeline for website or app development varies depending on the complexity of the project, features required, and client specifications. We work closely with clients to establish realistic timelines and strive to deliver projects within agreed-upon deadlines.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Can I see examples of your previous work?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "Absolutely! We have a portfolio showcasing our previous projects across various industries. Feel free to explore our portfolio to see examples of our web development, app development, e-commerce solutions, and more. Additionally, we can provide case studies and client testimonials upon request for a more in-depth understanding of our capabilities and expertise.",
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'Can you help with website maintenance and updates?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "Yes, we offer website maintenance services to ensure your website remains up-to-date, secure, and performing optimally. Our team can handle regular updates, security patches, content changes, and more, allowing you to focus on your core business activities.",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'What is SEO, and why is it important for my website?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "SEO (Search Engine Optimization) is the process of optimizing your website to improve its visibility in search engine results pages (SERPs). It is crucial for attracting organic traffic and increasing your website's visibility, which ultimately leads to higher rankings and more potential customers.",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'How do I choose the right hosting plan for my website?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "Choosing the right hosting plan depends on factors such as website traffic, storage requirements, security needs, and budget. Our team can assess your specific requirements and recommend a hosting plan that aligns with your goals and ensures optimal performance for your website.",
       },
-    ]}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
     ]}
   />
 
@@ -448,20 +329,19 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Get Started',
+        href: '/contact',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:check',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Transform Your Digital Vision into Reality with Brandify Media<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Discover how our innovative solutions can take your business to new heights. <br class="hidden md:inline" />Let's collaborate to create a digital strategy tailored to your needs.
     </Fragment>
   </CallToAction>
 </Layout>

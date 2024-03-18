@@ -10,8 +10,8 @@ site:
 metadata:
   title:
     default: Brandify Media
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    template: '%s — BrandifY Media'
+  description: "Brandify Media is focused on innovation and creativity, offering a comprehensive suite of services including web design and development, app development, user experience design, and e-commerce solutions."
   robots:
     index: true
     follow: true
