@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Brandify Media
-    template: '%s — BrandifY Media'
+    template: '%s — Brandify Media'
   description: "Brandify Media is focused on innovation and creativity, offering a comprehensive suite of services including web design and development, app development, user experience design, and e-commerce solutions."
   robots:
     index: true
