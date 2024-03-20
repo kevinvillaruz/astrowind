@@ -1,0 +1,307 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Content from '~/components/widgets/Content.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+const metadata = {
+  title: 'Hosting Services | Brandify Media',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+  tagline="Hosting Services"
+  actions={[
+    { variant: 'primary', target: '_blank', text: 'Get Started', href: '/contact' },
+    { text: 'Learn more', href: '#features' },
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    alt: 'Brandify Hero Image',
+  }}
+>
+  <Fragment slot="title">
+    <span class="text-accent dark:text-white highlight"
+      >Reliable Hosting Solutions</span> for your Website or App
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    <span class="hidden sm:inline">Ensure
+    <span class="font-semibold">your website stays online </span>and accessible to customers with our dependable hosting solutions. </span
+    >
+    From shared hosting to dedicated servers, we offer a range of options to suit your needs and budget. 
+  </Fragment>
+</Hero2>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    id="features"
+    title="Looking for Reliable and Secure Hosting Solutions for Your Business Website?"
+    subtitle="Our hosting solutions are designed to provide businesses with reliable and secure hosting options for their websites. Whether you're a small blog or a large e-commerce site, we have the infrastructure and expertise to keep your site up and running smoothly."
+    tagline="Service Overview"
+    columns={2}
+    items={[
+      {
+        title: 'Reliability',
+        description: `Keep your website online and accessible to customers with our reliable hosting solutions and 99.9% uptime guarantee.`,
+        icon: 'tabler:square-number-1',
+      },
+      {
+        title: 'Scalability',
+        description:
+          'Scale your hosting plan as your website grows, with options for shared hosting, VPS hosting, and dedicated servers.',
+        icon: 'tabler:square-number-2',
+      },
+      {
+        title: 'Security',
+        description: 'Protect your website and customer data with our robust security measures, including firewalls, malware scanning, and SSL certificates.',
+        icon: 'tabler:square-number-3',
+      },
+      {
+        title: 'Performance',
+        description: `Ensure fast page load times and optimal performance for your website with our high-speed servers and advanced caching technologies.`,
+        icon: 'tabler:square-number-4',
+      },
+      {
+        title: 'Support',
+        description: `Get peace of mind knowing that our expert support team is available around the clock to assist you with any issues or questions.`,
+        icon: 'tabler:square-number-5',
+      },
+      {
+        title: 'Cost-Efficiency',
+        description: ` Enjoy cost-effective hosting solutions tailored to your business needs, helping you save on infrastructure costs while maximizing performance and reliability.`,
+        icon: 'tabler:square-number-6',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1521517407911-565264e7d82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
+      alt: 'Colorful Image',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: '1.	Assessment',
+        description:
+          'We start by assessing your hosting needs and requirements, taking into account factors such as website traffic, resource usage, and security.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: '2.	Recommendation',
+        description:
+          "Based on our assessment, we recommend the hosting solution that best fits your needs and budget, whether it's shared hosting, VPS hosting, or dedicated servers.",
+        icon: 'tabler:settings',
+      },
+      {
+        title: '3.	Setup & Configuration',
+        description:
+          "Once you've chosen a hosting plan, we handle the setup and configuration of your hosting environment, ensuring everything is optimized for performance and security.",
+        icon: 'tabler:template',
+      },
+      {
+        title: '4.	Migration',
+        description: "If you're transferring an existing website to our hosting platform, we assist with the migration process, ensuring a smooth transition with minimal downtime.",
+        icon: 'tabler:rocket',
+      },
+      {
+        title: '5.	Monitoring & Maintenance',
+        description: "We monitor your hosting environment 24/7 to ensure optimal performance and security, with regular updates and maintenance to keep everything running smoothly.",
+        icon: 'tabler:tools',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1576153192621-7a3be10b356e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">How it works:</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Backup Solutions',
+        description:"Safeguard your website data with automated backup solutions, allowing you to restore your website quickly in case of data loss or corruption.",
+        icon: 'tabler:wifi-off',
+      },
+      {
+        title: 'Control Panel',
+        description:
+          "Manage your hosting environment easily with a user-friendly control panel, offering intuitive tools and features for website management, domain management, and more.",
+        icon: 'tabler:file-download',
+      },
+      {
+        title: 'Content Delivery Network (CDN)',
+        description: "Enhance your website's speed and performance by leveraging a global network of servers to deliver content to users from the nearest location, reducing latency and improving user experience.",
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Advanced Security Features',
+        description: "Enhance your website's security with features like DDoS protection, two-factor authentication, and regular security audits to mitigate cyber threats.",
+        icon: 'tabler:heart',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Vintage Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">More features</h3>
+    </Fragment>
+  </Content>
+
+   <!-- Brands Widget ****************** -->
+
+   <Brands
+   title="We leverage cutting-edge and latest web technologies"
+   subtitle="Discover the robust web technologies we harness to create dynamic and engaging online experiences."
+   icons={[]}
+   images={[
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/astrojs.svg',
+       alt: 'AstroJS',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/node.svg',
+       alt: 'NodeJS',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/react.svg',
+       alt: 'React',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/mongodb.svg',
+       alt: 'MongoDB',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/amazon-web-services.svg',
+       alt: 'Amazon Web Services',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/DigitalOcean.svg',
+       alt: 'DigitalOcean',
+     },
+   ]}
+ />
+
+
+<!-- Testimonials Widget *********** -->
+
+<Testimonials
+title="What our clients say?"
+testimonials={[
+  {
+    testimonial: `It's made exploring and downloading website templates a breeze. The interface is intuitive, and I had no trouble finding the perfect template for my project. It's an app that truly empowers users.`,
+    name: 'Cary Kennedy',
+    job: 'Film director',
+    image: {
+      src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Cary Kennedy Image',
+    },
+  },
+  {
+    testimonial: `The app's seamless download process and intuitive layout have made selecting templates an enjoyable experience. Being able to preview and experiment with different designs before committing has saved me time and ensured I get the perfect look for my website.`,
+    name: 'Josh Wilkinson',
+    job: 'Product Manager',
+    image: {
+      src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Josh Wilkinson Image',
+    },
+  },
+  {
+    testimonial:
+      'I was able to download and use a professional website template within minutes. The step-by-step process and user-friendly interface made it easy for me to create a website that looks as if it was designed by a pro.',
+    name: 'Sidney Hansen',
+    job: 'Decorator',
+    image: {
+      src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Sidney Hansen Image',
+    },
+  },
+]}
+callToAction={{
+  target: '_blank',
+  text: 'Share your experience',
+  href: 'https://g.page/r/Cff6ZshVT8OXEBM/review',
+  icon: 'tabler:chevron-right',
+}}
+/>
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions about Our Web Hosting Solutions"
+    items={[
+      {
+        title: 'What is web hosting?',
+        description:
+          "Web hosting is a service that allows individuals and organizations to publish their websites on the internet. Hosting providers allocate server space and resources to store website files and make them accessible to visitors online.",
+      },
+      {
+        title: 'What types of web hosting are available?',
+        description:
+          "There are several types of web hosting, including shared hosting, virtual private servers (VPS), dedicated hosting, cloud hosting, and managed WordPress hosting. Each type offers different levels of performance, control, and scalability to suit various website needs.",
+      },
+      {
+        title: "How do I choose the right hosting plan for my website?",
+        description: "To choose the right hosting plan, consider factors such as the size and complexity of your website, expected traffic volume, technical requirements, budget, and level of control and support needed. Assessing these factors will help you determine whether shared, VPS, dedicated, or other hosting options are most suitable for your site.",
+      },
+      {
+        title: "What is uptime, and why is it important?",
+        description:
+          "Uptime refers to the percentage of time that a server is operational and accessible to users. It is crucial for website availability and performance. Higher uptime percentages indicate better reliability, ensuring that your website remains online and accessible to visitors without interruptions.",
+      },
+      {
+        title: "How do I transfer my existing website to a new hosting provider?",
+        description:
+          "To transfer your website to a new hosting provider, you'll need to back up your site files and databases, register your domain with the new host, upload your website files to the new server, and update your domain's DNS settings to point to the new hosting account. Many hosting providers offer migration services to assist with this process.",
+      },
+      {
+        title: "What security measures are in place to protect my website and data?",
+        description:
+          "Hosting providers implement various security measures, such as firewalls, malware scanning, SSL encryption, regular software updates, and DDoS protection, to safeguard websites and data from cyber threats. Additionally, many hosts offer security add-ons and tools to further enhance website security.",
+      },
+    ]}
+  />
+
+ <!-- CallToAction Widget *********** -->
+
+ <CallToAction
+ actions={[
+   {
+     variant: 'primary',
+     text: 'Get Started',
+     href: '/contact',
+     target: '_blank',
+     icon: 'tabler:check',
+   },
+ ]}
+>
+ <Fragment slot="title">
+  Get started now and enjoy reliable, secure, and lightning-fast hosting!<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+ </Fragment>
+
+ <Fragment slot="subtitle">
+   <br class="hidden md:inline" />Experience seamless website hosting with us today!
+ </Fragment>
+</CallToAction>
+</Layout>
