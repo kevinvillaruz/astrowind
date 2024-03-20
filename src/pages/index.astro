@@ -37,7 +37,7 @@ const metadata = {
     <Fragment slot="title">
       Transforming
  <span class="hidden xl:inline"></span>
-      <span class="text-accent dark:text-white highlight"> Digital Experiences</span> that define brands.
+      <span class="bg-gradient-to-r from-violet-500 to-fuchsia-500 inline-block text-transparent bg-clip-text px-1 py-2 dark:text-gray-200"> Digital Experiences</span> that define brands.
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -48,22 +48,6 @@ const metadata = {
     </Fragment>
   </Hero>
 
-  <!-- Note Widget ******************* -->
-
-  <Note />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    title="Driving Digital Success: Our Impact in Numbers"
-    subtitle="Discover the measurable impact of partnering with Brandify Media. From increased conversions to lightning-fast websites, explore the statistics that showcase our commitment to driving digital success for our clients."
-    stats={[
-      { title: 'Performance', amount: '+50%' },
-      { title: 'Bug-free code', amount: '99%' },
-      { title: 'User Ratings', amount: '5*' },
-      { title: 'Client Retention', amount: '75%' },
-    ]}
-  />
 
     <!-- Features2 Widget ************** -->
 
@@ -129,10 +113,23 @@ const metadata = {
     </Fragment>
   </Features2>
 
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Driving Digital Success: Our Impact in Numbers"
+    subtitle="Discover the measurable impact of partnering with Brandify Media. From increased conversions to lightning-fast websites, explore the statistics that showcase our commitment to driving digital success for our clients."
+    stats={[
+      { title: 'Performance', amount: '+50%' },
+      { title: 'Bug-free code', amount: '99%' },
+      { title: 'User Ratings', amount: '5*' },
+      { title: 'Client Retention', amount: '75%' },
+    ]}
+  />
+
     <!-- Brands Widget ****************** -->
 
     <Brands
-    title="Our Web Technology Arsenal"
+    title="We leverage cutting-edge and latest web technologies"
     subtitle="Discover the robust web technologies we harness to create dynamic and engaging online experiences."
     icons={[]}
     images={[
@@ -189,7 +186,7 @@ const metadata = {
   <Features
     id="features"
     tagline="Partner with Confidence, Thrive with Expertise"
-    title="What you'll get working with Brandify"
+    title="Here's what you can expect when partnering with Brandify Media"
     subtitle="Explore the compelling reasons why businesses trust Brandify Media for their development needs."
     items={[
       {
@@ -231,6 +228,9 @@ const metadata = {
     ]}
   />
 
+   <!-- Note Widget ******************* -->
+
+   <Note />
  <!-- Testimonials Widget *********** -->
 
  <Testimonials

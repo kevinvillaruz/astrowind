@@ -1,0 +1,328 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Content from '~/components/widgets/Content.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
+
+import appStoreImg from '~/assets/images/app-store.png';
+import googlePlayImg from '~/assets/images/google-play.png';
+
+const appStoreDownloadLink = 'https://github.com/onwidget/astrowind';
+const googlePlayDownloadLink = 'https://github.com/onwidget/astrowind';
+
+const metadata = {
+  title: 'Website Develoment | Brandify Media',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+  tagline="Website Development"
+  actions={[
+    { variant: 'primary', target: '_blank', text: 'Get Started', href: '/contact' },
+    { text: 'Learn more', href: '#features' },
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    alt: 'AstroWind Hero Image',
+  }}
+>
+  <Fragment slot="title">
+    Empower Your Online Presence with Expert<br /> <span class="text-accent dark:text-white highlight"
+      >Web Development</span
+    > Solutions<br />
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    <span class="hidden sm:inline">
+      Unlock the potential of your online business with our <span class="font-semibold">cutting-edge </span>web development solutions</span
+    >
+    From sleek designs to seamless functionality, we create websites that captivate audiences and drive results. 
+  </Fragment>
+</Hero2>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    id="features"
+    title="Tailored Web Development Solutions"
+    subtitle="Our web development service is designed to elevate your digital presence and boost your online success. We specialize in creating custom websites that are tailored to your unique brand identity and business goals. Whether you need a simple portfolio site or a complex e-commerce platform, we have the expertise to bring your vision to life."
+    tagline="Service Overview"
+    columns={2}
+    items={[
+      {
+        title: 'Drive Results',
+        description: `Increase brand visibility, engagement, and conversions with a professionally crafted website.`,
+        icon: 'tabler:square-number-1',
+      },
+      {
+        title: 'Custom Solutions',
+        description:
+          'Get a website that is built from scratch, reflecting your brand personality and catering to your specific needs. ',
+        icon: 'tabler:square-number-2',
+      },
+      {
+        title: 'Security and reliability',
+        description: 'Rest assured knowing that your website is secure, stable, and optimized for performance.',
+        icon: 'tabler:square-number-3',
+      },
+      {
+        title: 'Responsive Design',
+        description: `Reach your audience across all devices with a responsive design that adapts seamlessly to different screen sizes.`,
+        icon: 'tabler:square-number-4',
+      },
+      {
+        title: 'Scalability',
+        description: `Scale your website effortlessly as your business grows, with flexible and scalable solutions.`,
+        icon: 'tabler:square-number-5',
+      },
+      {
+        title: 'Performance',
+        description: `Websites built following best practices resulting to blazing fast page loading speeds that helps your SEO.`,
+        icon: 'tabler:square-number-6',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1521517407911-565264e7d82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
+      alt: 'Colorful Image',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: '1. Consultation',
+        description:
+          'We start by understanding your business objectives, target audience, and design preferences.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: '2.	Design & Development',
+        description:
+          'Our team of experts works tirelessly to design and develop a website that aligns with your vision and meets your requirements.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: '3.	Testing & Optimization',
+        description:
+          'We rigorously test your website to ensure compatibility, functionality, and performance across various devices and browsers.',
+        icon: 'tabler:template',
+      },
+      {
+        title: '4.	Launch',
+        description: 'Once everything is perfect, we launch your website and ensure a smooth transition to the live environment.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: '5.	Support & Maintenance',
+        description: 'We provide ongoing support and maintenance to keep your website running smoothly and efficiently.',
+        icon: 'tabler:tools',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1576153192621-7a3be10b356e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">What to expect:</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Content Management System (CMS)',
+        description:"Take charge of your website's content effortlessly with a robust CMS, enabling easy editing, publishing, and management of web pages, blog posts, and multimedia content.",
+        icon: 'tabler:wifi-off',
+      },
+      {
+        title: 'Built-in Technical SEO',
+        description:
+          "Enhance your website's search engine visibility from the start with integrated technical SEO features, including customizable meta tags, XML sitemap generation, and schema markup implementation.",
+        icon: 'tabler:file-download',
+      },
+      {
+        title: 'Analytics Integration',
+        description: "Track website performance and user behavior with seamless integration of tools like Google Analytics or Adobe Analytics. Monitor key metrics and make data-driven decisions to optimize your site.",
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Custom Functionality',
+        description: "Enhance website functionality with tailored features and integrations. Whether it's a custom contact form or interactive elements, elevate user experience to stand out from competitors.",
+        icon: 'tabler:heart',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Vintage Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Other features</h3>
+    </Fragment>
+  </Content>
+
+   <!-- Brands Widget ****************** -->
+
+   <Brands
+   title="We leverage cutting-edge and latest web technologies"
+   subtitle="Discover the robust web technologies we harness to create dynamic and engaging online experiences."
+   icons={[]}
+   images={[
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/astrojs.svg',
+       alt: 'AstroJS',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/payload-cms.svg',
+       alt: 'PayloadCMS',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/node.svg',
+       alt: 'NodeJS',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/shopify.svg',
+       alt: 'Shopify',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/Webflow.svg',
+       alt: 'Webflow',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/react.svg',
+       alt: 'React',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/wordpress.svg',
+       alt: 'WordPress',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/mongodb.svg',
+       alt: 'MongoDB',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/amazon-web-services.svg',
+       alt: 'Amazon Web Services',
+     },
+     {
+       src: 'https://brandify-site-images.s3.me-central-1.amazonaws.com/brand-logos/DigitalOcean.svg',
+       alt: 'DigitalOcean',
+     },
+   ]}
+ />
+
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="What our users say?"
+    testimonials={[
+      {
+        testimonial: `It's made exploring and downloading website templates a breeze. The interface is intuitive, and I had no trouble finding the perfect template for my project. It's an app that truly empowers users.`,
+        name: 'Cary Kennedy',
+        job: 'Film director',
+        image: {
+          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Cary Kennedy Image',
+        },
+      },
+      {
+        testimonial: `The app's seamless download process and intuitive layout have made selecting templates an enjoyable experience. Being able to preview and experiment with different designs before committing has saved me time and ensured I get the perfect look for my website.`,
+        name: 'Josh Wilkinson',
+        job: 'Product Manager',
+        image: {
+          src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Josh Wilkinson Image',
+        },
+      },
+      {
+        testimonial:
+          'I was able to download and use a professional website template within minutes. The step-by-step process and user-friendly interface made it easy for me to create a website that looks as if it was designed by a pro.',
+        name: 'Sidney Hansen',
+        job: 'Decorator',
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+    ]}
+    callToAction={{
+      target: '_blank',
+      text: 'Read more testimonials',
+      href: 'https://github.com/onwidget/astrowind',
+      icon: 'tabler:chevron-right',
+    }}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Still have some doubts?"
+    items={[
+      {
+        title: 'What does this app do?',
+        description:
+          'This app provides a platform for you to easily browse, purchase, download, and use a wide range of website templates for your projects.',
+      },
+      {
+        title: 'How can this app solve my problem?',
+        description:
+          'This app streamlines the process of finding and implementing professional website designs, saving you time and effort in creating visually appealing and functional websites.',
+      },
+      {
+        title: 'Is it available for my device?',
+        description: `Our app is designed for compatibility across various devices and platforms, ensuring accessibility whether you're using a smartphone, tablet, or computer.`,
+      },
+      {
+        title: 'What makes this app different from others?',
+        description:
+          'Our app stands out for its user-friendly interface, extensive template collection, and seamless integration of the purchasing and downloading process, making it highly efficient.',
+      },
+      {
+        title: 'Are there any costs involved?',
+        description:
+          'While the app itself may be free to download, there may be costs associated with purchasing specific templates based on your preferences and project requirements.',
+      },
+    ]}
+  />
+
+ <!-- CallToAction Widget *********** -->
+
+ <CallToAction
+ actions={[
+   {
+     variant: 'primary',
+     text: 'Get Started',
+     href: '/contact',
+     target: '_blank',
+     icon: 'tabler:check',
+   },
+ ]}
+>
+ <Fragment slot="title">
+   Buld your Website with Brandify Media<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+ </Fragment>
+
+ <Fragment slot="subtitle">
+   Discover how our innovative solutions can take your business to new heights. <br class="hidden md:inline" />Let's collaborate to create a website tailored to your needs.
+ </Fragment>
+</CallToAction>
+</Layout>
