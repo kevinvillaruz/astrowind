@@ -11,35 +11,35 @@ export const headerData = {
       links: [
         {
           text: 'Web Development',
-          href: getPermalink('/#features'),
+          href: getPermalink('/services/web-development'),
         },
         {
           text: 'Mobile Apps',
-          href: getPermalink('/services'),
+          href: getPermalink('/services/mobile-app-development'),
         },
         {
           text: 'Web Applications',
-          href: getPermalink('/pricing'),
+          href: getPermalink('/services/web-apps'),
         },
         {
           text: 'e-Commerce',
-          href: getPermalink('/contact'),
+          href: getPermalink('/services/e-commerce-website-development'),
         },
         {
           text: 'Hosting',
-          href: getPermalink('/about'),
+          href: getPermalink('/services/hosting'),
         },
         {
           text: 'Payment Gateways',
-          href: getPermalink('/terms'),
+          href: getPermalink('/services/payment-gateways'),
         },
         {
           text: 'SEO',
-          href: getPermalink('/privacy'),
+          href: getPermalink('/services/SEO'),
         },
         {
           text: 'Themes & Templates',
-          href: getPermalink('/privacy'),
+          href: getPermalink('/services/themes'),
         },
       ],
     },
@@ -77,20 +77,20 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'Web Development', href: '#' },
-        { text: 'Mobile Apps', href: '#' },
-        { text: 'Web Applications', href: '#' },
-        { text: 'e-Commerce', href: '#' },
-        { text: 'Hosting', href: '#' },
-        { text: 'Payment Gateways', href: '#' },
+        { text: 'Web Development', href: 'services/web-development' },
+        { text: 'Mobile Apps', href: 'services/mobile-app-development' },
+        { text: 'Web Applications', href: 'services/web-apps' },
+        { text: 'e-Commerce', href: 'services/e-commerce-website-development' },
+        { text: 'Hosting', href: 'services/hosting' },
+        { text: 'Payment Gateways', href: 'services/payment-gateways' },
       ],
     },
     {
       title: 'Resources',
       links: [
-        { text: 'Case Studies', href: '#' },
-        { text: 'Themes & Templates', href: '#' },
-        { text: 'Projects', href: '#' },
+        { text: 'Case Studies', href: '/case-studies' },
+        { text: 'Themes & Templates', href: 'services/themes' },
+        { text: 'Projects', href: '/projects' },
         { text: 'Blog', href: '/blog' },
       ],
     },
@@ -98,18 +98,15 @@ export const footerData = {
       title: 'Support',
       links: [
         { text: 'Submit a ticket', href: '#' },
-        { text: 'Contact us', href: '#' },
+        { text: 'Contact us', href: '/contact' },
       ],
     },
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'About', href: '#/about' },
+        { text: 'Careers', href: '/careers' },
+        { text: 'Social Impact', href: '/social-impact' },
       ],
     },
   ],
